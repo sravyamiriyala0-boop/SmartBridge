@@ -1,0 +1,2718 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Parameter 1' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Vitamins &quot;'>
+        <calculation class='tableau' formula='&quot;Vitamins &quot;' />
+        <members>
+          <member value='&quot;Veggies Day&quot;' />
+          <member value='&quot;Fruit Day&quot;' />
+          <member value='&quot;Vitamins &quot;' />
+        </members>
+      </column>
+      <column caption='Parameter 2' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Indian_food&quot;'>
+        <calculation class='tableau' formula='&quot;Indian_food&quot;' />
+        <members>
+          <member value='&quot;Thai_food&quot;' />
+          <member value='&quot;Greek_food&quot;' />
+          <member value='&quot;Indian_food&quot;' />
+          <member value='&quot;Italin_food&quot;' />
+          <member value='&quot;Persian_food&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='food_coded_filled' inline='true' name='federated.1ajmkla04646dh1dlp1b30blyxzz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='food_coded_filled' name='textscan.1sglni70spj3dl12s9w8n0whtxrq'>
+            <connection class='textscan' directory='C:/Users/T480/Downloads' filename='food_coded_filled.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1sglni70spj3dl12s9w8n0whtxrq' name='food_coded_filled.csv' table='[food_coded_filled#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='real' name='GPA' ordinal='0' />
+            <column datatype='integer' name='Gender' ordinal='1' />
+            <column datatype='integer' name='breakfast' ordinal='2' />
+            <column datatype='integer' name='calories_chicken' ordinal='3' />
+            <column datatype='real' name='calories_day' ordinal='4' />
+            <column datatype='real' name='calories_scone' ordinal='5' />
+            <column datatype='integer' name='coffee' ordinal='6' />
+            <column datatype='string' name='comfort_food' ordinal='7' />
+            <column datatype='string' name='comfort_food_reasons' ordinal='8' />
+            <column datatype='real' name='comfort_food_reasons_coded' ordinal='9' />
+            <column datatype='real' name='cook' ordinal='10' />
+            <column datatype='integer' name='comfort_food_reasons_coded.1' ordinal='11' />
+            <column datatype='real' name='cuisine' ordinal='12' />
+            <column datatype='string' name='diet_current' ordinal='13' />
+            <column datatype='integer' name='diet_current_coded' ordinal='14' />
+            <column datatype='real' name='drink' ordinal='15' />
+            <column datatype='string' name='eating_changes' ordinal='16' />
+            <column datatype='integer' name='eating_changes_coded' ordinal='17' />
+            <column datatype='integer' name='eating_changes_coded1' ordinal='18' />
+            <column datatype='integer' name='eating_out' ordinal='19' />
+            <column datatype='real' name='employment' ordinal='20' />
+            <column datatype='integer' name='ethnic_food' ordinal='21' />
+            <column datatype='real' name='exercise' ordinal='22' />
+            <column datatype='real' name='father_education' ordinal='23' />
+            <column datatype='string' name='father_profession' ordinal='24' />
+            <column datatype='string' name='fav_cuisine' ordinal='25' />
+            <column datatype='integer' name='fav_cuisine_coded' ordinal='26' />
+            <column datatype='real' name='fav_food' ordinal='27' />
+            <column datatype='string' name='food_childhood' ordinal='28' />
+            <column datatype='integer' name='fries' ordinal='29' />
+            <column datatype='integer' name='fruit_day' ordinal='30' />
+            <column datatype='integer' name='grade_level' ordinal='31' />
+            <column datatype='integer' name='greek_food' ordinal='32' />
+            <column datatype='integer' name='healthy_feeling' ordinal='33' />
+            <column datatype='string' name='healthy_meal' ordinal='34' />
+            <column datatype='string' name='ideal_diet' ordinal='35' />
+            <column datatype='integer' name='ideal_diet_coded' ordinal='36' />
+            <column datatype='real' name='income' ordinal='37' />
+            <column datatype='integer' name='indian_food' ordinal='38' />
+            <column datatype='integer' name='italian_food' ordinal='39' />
+            <column datatype='real' name='life_rewarding' ordinal='40' />
+            <column datatype='real' name='marital_status' ordinal='41' />
+            <column datatype='string' name='meals_dinner_friend' ordinal='42' />
+            <column datatype='real' name='mother_education' ordinal='43' />
+            <column datatype='string' name='mother_profession' ordinal='44' />
+            <column datatype='integer' name='nutritional_check' ordinal='45' />
+            <column datatype='real' name='on_off_campus' ordinal='46' />
+            <column datatype='integer' name='parents_cook' ordinal='47' />
+            <column datatype='integer' name='pay_meal_out' ordinal='48' />
+            <column datatype='real' name='persian_food' ordinal='49' />
+            <column datatype='real' name='self_perception_weight' ordinal='50' />
+            <column datatype='real' name='soup' ordinal='51' />
+            <column datatype='real' name='sports' ordinal='52' />
+            <column datatype='integer' name='thai_food' ordinal='53' />
+            <column datatype='real' name='tortilla_calories' ordinal='54' />
+            <column datatype='integer' name='turkey_calories' ordinal='55' />
+            <column datatype='string' name='type_sports' ordinal='56' />
+            <column datatype='integer' name='veggies_day' ordinal='57' />
+            <column datatype='integer' name='vitamins' ordinal='58' />
+            <column datatype='integer' name='waffle_calories' ordinal='59' />
+            <column datatype='integer' name='weight' ordinal='60' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GPA</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GPA]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>GPA</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>breakfast</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[breakfast]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>breakfast</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calories_chicken</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calories_chicken]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>calories_chicken</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calories_day</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[calories_day]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>calories_day</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calories_scone</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[calories_scone]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>calories_scone</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coffee</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[coffee]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>coffee</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comfort_food</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[comfort_food]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>comfort_food</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comfort_food_reasons</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[comfort_food_reasons]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>comfort_food_reasons</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comfort_food_reasons_coded</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[comfort_food_reasons_coded]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>comfort_food_reasons_coded</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cook</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cook]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>cook</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comfort_food_reasons_coded.1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comfort_food_reasons_coded.1]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>comfort_food_reasons_coded.1</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cuisine</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cuisine]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>cuisine</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diet_current</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[diet_current]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>diet_current</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diet_current_coded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[diet_current_coded]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>diet_current_coded</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drink</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[drink]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>drink</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eating_changes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[eating_changes]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>eating_changes</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eating_changes_coded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[eating_changes_coded]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>eating_changes_coded</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eating_changes_coded1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[eating_changes_coded1]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>eating_changes_coded1</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eating_out</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[eating_out]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>eating_out</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[employment]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>employment</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ethnic_food</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ethnic_food]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>ethnic_food</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>exercise</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[exercise]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>exercise</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>father_education</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[father_education]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>father_education</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>father_profession</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[father_profession]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>father_profession</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fav_cuisine</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fav_cuisine]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>fav_cuisine</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fav_cuisine_coded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fav_cuisine_coded]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>fav_cuisine_coded</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fav_food</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fav_food]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>fav_food</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>food_childhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[food_childhood]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>food_childhood</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fries]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>fries</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fruit_day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fruit_day]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>fruit_day</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grade_level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[grade_level]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>grade_level</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>greek_food</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[greek_food]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>greek_food</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>healthy_feeling</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[healthy_feeling]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>healthy_feeling</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>healthy_meal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[healthy_meal]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>healthy_meal</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ideal_diet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ideal_diet]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>ideal_diet</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ideal_diet_coded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ideal_diet_coded]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>ideal_diet_coded</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[income]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>income</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>indian_food</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[indian_food]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>indian_food</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>italian_food</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[italian_food]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>italian_food</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>life_rewarding</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[life_rewarding]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>life_rewarding</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marital_status</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[marital_status]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>marital_status</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meals_dinner_friend</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[meals_dinner_friend]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>meals_dinner_friend</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mother_education</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mother_education]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>mother_education</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mother_profession</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mother_profession]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>mother_profession</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nutritional_check</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[nutritional_check]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>nutritional_check</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>on_off_campus</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[on_off_campus]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>on_off_campus</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parents_cook</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[parents_cook]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>parents_cook</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pay_meal_out</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pay_meal_out]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>pay_meal_out</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>persian_food</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[persian_food]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>persian_food</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>self_perception_weight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[self_perception_weight]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>self_perception_weight</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>soup</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[soup]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>soup</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sports</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sports]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>sports</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thai_food</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[thai_food]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>thai_food</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tortilla_calories</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tortilla_calories]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>tortilla_calories</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>turkey_calories</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[turkey_calories]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>turkey_calories</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type_sports</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type_sports]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>type_sports</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>veggies_day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[veggies_day]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>veggies_day</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vitamins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vitamins]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>vitamins</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waffle_calories</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[waffle_calories]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>waffle_calories</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weight]</local-name>
+            <parent-name>[food_coded_filled.csv]</parent-name>
+            <remote-alias>weight</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Gender1' datatype='string' name='[Calculation_0586883905634304]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Gender] = 1 THEN &quot;Female&quot;&#13;&#10;ELSE &quot;Male&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Breakfast1' datatype='string' name='[Calculation_0586883906187265]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [breakfast] = 1 THEN &quot;Cerals&quot;&#13;&#10;ELSE &quot;Donut&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Health' datatype='string' name='[Calculation_0791668560752640]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF  [fruit_day] &gt;=4&#13;&#10;AND [fries] &lt;=2&#13;&#10;AND [veggies_day]&gt;=4&#13;&#10;AND [exercise]&gt;=1&#13;&#10;THEN &quot;Healthy&quot;&#13;&#10;ELSE &quot;Unhealthy&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Calculation1' datatype='integer' name='[Calculation_0791668563931137]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 1]=&quot;Veggies Day&quot; THEN [veggies_day]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Vitamins&quot; THEN [vitamins]&#13;&#10;ELSE [fruit_day]&#13;&#10;END' />
+      </column>
+      <column caption='Calculation2' datatype='real' name='[Calculation_0791668566949890]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Parameters].[Parameter 2] = &quot;Thai_Food&quot; THEN [thai_food]&#13;&#10;ELSEIF [Parameters].[Parameter 2] =&quot;Indian_Food&quot; THEN [indian_food]&#13;&#10;ELSEIF [Parameters].[Parameter 2] =&quot;Greek_Food&quot; THEN [greek_food]&#13;&#10;ELSEIF [Parameters].[Parameter 2]=&quot;Italian_Food&quot; THEN [italian_food]&#13;&#10;ELSE [persian_food]&#13;&#10;END' />
+      </column>
+      <column datatype='string' name='[Comfort Food Reasons (group) 1]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[comfort_food_reasons]' new-bin='true'>
+          <bin default-name='false' value='&quot;Boredom&quot;'>
+            <value>&quot;boredom&quot;</value>
+            <value>&quot;Boredom&quot;</value>
+            <value>&quot;Boredom comfort hunger&quot;</value>
+            <value>&quot;Boredom usually&quot;</value>
+            <value>&quot;Boredom, anger and just being hungry in general.&quot;</value>
+            <value>&quot;Boredom, anger, drunkeness&quot;</value>
+            <value>&quot;boredom, anger, happy&quot;</value>
+            <value>&quot;Boredom, being in your period, and long bus rides for softball&quot;</value>
+            <value>&quot;Boredom, hunger, snacking.&quot;</value>
+            <value>&quot;Boredom, laziness, anger&quot;</value>
+            <value>&quot;Boredom, lazyniss &quot;</value>
+            <value>&quot;Boredom. Celebration.&quot;</value>
+            <value>&quot;Friends, environment and boredom&quot;</value>
+            <value>&quot;Hunger and Boredom&quot;</value>
+            <value>&quot;Hunger, boredom&quot;</value>
+            <value>&quot;I usually only eat comfort foods when I am bored. I will also eat them when I am happy to celebrate and then when I am sad to comfort me.&quot;</value>
+            <value>&quot;loneliness, homework, boredom &quot;</value>
+            <value>&quot;Mostly boredom&quot;</value>
+            <value>&quot;stres, boredom, and nighttime&quot;</value>
+            <value>&quot;they are yummy, my boyfriend sometimes makes me sad, boredom&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Happiness&quot;'>
+            <value>&quot;Bordem, happiness, sadness&quot;</value>
+            <value>&quot;Boredom, happiness, distraught &quot;</value>
+            <value>&quot;Happiness, boredom, social event&quot;</value>
+            <value>&quot;happiness, hunger, sadness&quot;</value>
+            <value>&quot;Happiness, sadness, celebration.&quot;</value>
+            <value>&quot;happiness, satisfaction&quot;</value>
+            <value>&quot;happiness, they are some of my favorite foods&quot;</value>
+            <value>&quot;Sadness, happiness and boredom&quot;</value>
+            <value>&quot;sadness, happiness and hunger&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;None&quot;'>
+            <value>&quot;A long day, not feeling well, winter &quot;</value>
+            <value>&quot;Anxiousness, watching TV I desire \&quot;comfort food\&quot; &quot;</value>
+            <value>&quot;hormones, Premenstrual syndrome.&quot;</value>
+            <value>&quot;I usually only eat comfort food when I&apos;m bored, if i am doing something, i can go for hours without eating &quot;</value>
+            <value>&quot;laziness and hungover&quot;</value>
+            <value>&quot;Lazy&quot;</value>
+            <value>&quot;No reasons&quot;</value>
+            <value>&quot;None, i don&apos;t eat comfort food. I just eat when i&apos;m hungry.&quot;</value>
+            <value>&quot;Sad, bored, excited&quot;</value>
+            <value>&quot;survival, bored&quot;</value>
+            <value>&quot;They taste better than other food. They are a pickme up. They are easy to make&quot;</value>
+            <value>&quot;Tired&quot;</value>
+            <value>&quot;Usually if I&apos;m sad or depressed.&quot;</value>
+            <value>&quot;we dont have comfort&quot;</value>
+            <value>&quot;when i am sad or craving&quot;</value>
+            <value>&quot;When i&apos;m  eating with my close friends/ Food smell or look good/ when I feel tired&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Sadness&quot;'>
+            <value>&quot;All of the above; sadness, boredom and confusion &quot;</value>
+            <value>&quot;Anger, sadness&quot;</value>
+            <value>&quot;Bad day, bored, sadness&quot;</value>
+            <value>&quot;boredom and sadness&quot;</value>
+            <value>&quot;Boredom and sadness&quot;</value>
+            <value>&quot;boredom, sadness&quot;</value>
+            <value>&quot;Boredom, sadness&quot;</value>
+            <value>&quot;boredom, sadness &quot;</value>
+            <value>&quot;Boredom, sadness and anger &quot;</value>
+            <value>&quot;boredom, sadness, and if it has a good taste. &quot;</value>
+            <value>&quot;Boredom, sadness, anxiety&quot;</value>
+            <value>&quot;boredom, sadness, hungry&quot;</value>
+            <value>&quot;Boredom, sadness, or with friends &quot;</value>
+            <value>&quot;Boredom!, sadness&quot;</value>
+            <value>&quot;I do not really eat \&quot;comfort food\&quot; but I guess sadness, special occasions, and anxiety &quot;</value>
+            <value>&quot;Loneliness / Homesick / Sadness&quot;</value>
+            <value>&quot;sadness&quot;</value>
+            <value>&quot;Sadness and cravings&quot;</value>
+            <value>&quot;sadness, boredom, &amp; anger &quot;</value>
+            <value>&quot;Sadness, boredom, late night snack &quot;</value>
+            <value>&quot;Sadness, boredom, lonely.&quot;</value>
+            <value>&quot;sadness, depression &quot;</value>
+            <value>&quot;Sadness, Loneliness, Boredom&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Stress&quot;'>
+            <value>&quot;bored, stress&quot;</value>
+            <value>&quot;boredom and stress&quot;</value>
+            <value>&quot;Boredom and stress&quot;</value>
+            <value>&quot;boredom, stress&quot;</value>
+            <value>&quot;Boredom, stress&quot;</value>
+            <value>&quot;Boredom, stress, and it tastes good&quot;</value>
+            <value>&quot;boredom, stress, mood swings&quot;</value>
+            <value>&quot;boredom, stressed, sad&quot;</value>
+            <value>&quot;Depression, comfort, accessibility &quot;</value>
+            <value>&quot;I am always stressed out, and bored when I am in my apartment. &quot;</value>
+            <value>&quot;I eat comfort food when im stressed out from school(finals week), when I`m sad, or when i am dealing with personal family issues.&quot;</value>
+            <value>&quot;Just cause&quot;</value>
+            <value>&quot;Mostly Stress&quot;</value>
+            <value>&quot;Sadness, stress&quot;</value>
+            <value>&quot;sadness, stress, cold weather&quot;</value>
+            <value>&quot;sadness, stressed, boredom&quot;</value>
+            <value>&quot;Stress&quot;</value>
+            <value>&quot;Stress and boredom&quot;</value>
+            <value>&quot;Stress and sadness&quot;</value>
+            <value>&quot;stress,  boredom, special occasions&quot;</value>
+            <value>&quot;stress, anger and boredom&quot;</value>
+            <value>&quot;Stress, anger and sadness &quot;</value>
+            <value>&quot;Stress, bored, anger&quot;</value>
+            <value>&quot;stress, boredom&quot;</value>
+            <value>&quot;Stress, boredom&quot;</value>
+            <value>&quot;Stress, boredom and physical activity&quot;</value>
+            <value>&quot;stress, boredom, cold weather&quot;</value>
+            <value>&quot;stress, boredom, college as whole &quot;</value>
+            <value>&quot;Stress, boredom, craving&quot;</value>
+            <value>&quot;Stress, boredom, cravings &quot;</value>
+            <value>&quot;Stress, boredom, sadness&quot;</value>
+            <value>&quot;Stress, frustration, self-consciousness &quot;</value>
+            <value>&quot;stress, sadness&quot;</value>
+            <value>&quot;Stress, sadness, bored &quot;</value>
+            <value>&quot;Stress, sadness, boredom&quot;</value>
+            <value>&quot;stressed, upset, or just craving a cheat meal&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Comfort Food Reasons (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[comfort_food_reasons]' new-bin='true'>
+          <bin default-name='false' value='&quot;Boredom&quot;'>
+            <value>&quot;boredom&quot;</value>
+            <value>&quot;Boredom&quot;</value>
+            <value>&quot;Boredom comfort hunger&quot;</value>
+            <value>&quot;Boredom usually&quot;</value>
+            <value>&quot;Boredom, anger and just being hungry in general.&quot;</value>
+            <value>&quot;Boredom, anger, drunkeness&quot;</value>
+            <value>&quot;boredom, anger, happy&quot;</value>
+            <value>&quot;Boredom, being in your period, and long bus rides for softball&quot;</value>
+            <value>&quot;Boredom, hunger, snacking.&quot;</value>
+            <value>&quot;Boredom, laziness, anger&quot;</value>
+            <value>&quot;Boredom, lazyniss &quot;</value>
+            <value>&quot;Boredom. Celebration.&quot;</value>
+            <value>&quot;Friends, environment and boredom&quot;</value>
+            <value>&quot;Hunger and Boredom&quot;</value>
+            <value>&quot;Hunger, boredom&quot;</value>
+            <value>&quot;loneliness, homework, boredom &quot;</value>
+            <value>&quot;Mostly boredom&quot;</value>
+            <value>&quot;stres, boredom, and nighttime&quot;</value>
+            <value>&quot;they are yummy, my boyfriend sometimes makes me sad, boredom&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Happiness&quot;'>
+            <value>&quot;Bordem, happiness, sadness&quot;</value>
+            <value>&quot;Boredom, happiness, distraught &quot;</value>
+            <value>&quot;Happiness, boredom, social event&quot;</value>
+            <value>&quot;happiness, hunger, sadness&quot;</value>
+            <value>&quot;Happiness, sadness, celebration.&quot;</value>
+            <value>&quot;happiness, satisfaction&quot;</value>
+            <value>&quot;happiness, they are some of my favorite foods&quot;</value>
+            <value>&quot;Sadness, happiness and boredom&quot;</value>
+            <value>&quot;sadness, happiness and hunger&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Sadness&quot;'>
+            <value>&quot;All of the above; sadness, boredom and confusion &quot;</value>
+            <value>&quot;Anger, sadness&quot;</value>
+            <value>&quot;Bad day, bored, sadness&quot;</value>
+            <value>&quot;boredom and sadness&quot;</value>
+            <value>&quot;Boredom and sadness&quot;</value>
+            <value>&quot;boredom, sadness&quot;</value>
+            <value>&quot;Boredom, sadness&quot;</value>
+            <value>&quot;boredom, sadness &quot;</value>
+            <value>&quot;Boredom, sadness and anger &quot;</value>
+            <value>&quot;boredom, sadness, and if it has a good taste. &quot;</value>
+            <value>&quot;Boredom, sadness, anxiety&quot;</value>
+            <value>&quot;boredom, sadness, hungry&quot;</value>
+            <value>&quot;Boredom, sadness, or with friends &quot;</value>
+            <value>&quot;Boredom!, sadness&quot;</value>
+            <value>&quot;I do not really eat \&quot;comfort food\&quot; but I guess sadness, special occasions, and anxiety &quot;</value>
+            <value>&quot;Loneliness / Homesick / Sadness&quot;</value>
+            <value>&quot;sadness&quot;</value>
+            <value>&quot;Sadness and cravings&quot;</value>
+            <value>&quot;sadness, boredom, &amp; anger &quot;</value>
+            <value>&quot;Sadness, boredom, late night snack &quot;</value>
+            <value>&quot;Sadness, boredom, lonely.&quot;</value>
+            <value>&quot;sadness, depression &quot;</value>
+            <value>&quot;Sadness, Loneliness, Boredom&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Stress&quot;'>
+            <value>&quot;bored, stress&quot;</value>
+            <value>&quot;boredom and stress&quot;</value>
+            <value>&quot;Boredom and stress&quot;</value>
+            <value>&quot;boredom, stress&quot;</value>
+            <value>&quot;Boredom, stress&quot;</value>
+            <value>&quot;Boredom, stress, and it tastes good&quot;</value>
+            <value>&quot;boredom, stress, mood swings&quot;</value>
+            <value>&quot;boredom, stressed, sad&quot;</value>
+            <value>&quot;I am always stressed out, and bored when I am in my apartment. &quot;</value>
+            <value>&quot;I eat comfort food when im stressed out from school(finals week), when I`m sad, or when i am dealing with personal family issues.&quot;</value>
+            <value>&quot;Mostly Stress&quot;</value>
+            <value>&quot;Sadness, stress&quot;</value>
+            <value>&quot;sadness, stress, cold weather&quot;</value>
+            <value>&quot;sadness, stressed, boredom&quot;</value>
+            <value>&quot;Stress&quot;</value>
+            <value>&quot;Stress and boredom&quot;</value>
+            <value>&quot;Stress and sadness&quot;</value>
+            <value>&quot;stress,  boredom, special occasions&quot;</value>
+            <value>&quot;stress, anger and boredom&quot;</value>
+            <value>&quot;Stress, anger and sadness &quot;</value>
+            <value>&quot;Stress, bored, anger&quot;</value>
+            <value>&quot;stress, boredom&quot;</value>
+            <value>&quot;Stress, boredom&quot;</value>
+            <value>&quot;Stress, boredom and physical activity&quot;</value>
+            <value>&quot;stress, boredom, cold weather&quot;</value>
+            <value>&quot;stress, boredom, college as whole &quot;</value>
+            <value>&quot;Stress, boredom, craving&quot;</value>
+            <value>&quot;Stress, boredom, cravings &quot;</value>
+            <value>&quot;Stress, boredom, sadness&quot;</value>
+            <value>&quot;Stress, frustration, self-consciousness &quot;</value>
+            <value>&quot;stress, sadness&quot;</value>
+            <value>&quot;Stress, sadness, bored &quot;</value>
+            <value>&quot;Stress, sadness, boredom&quot;</value>
+            <value>&quot;stressed, upset, or just craving a cheat meal&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='integer' hidden='true' name='[Gender]' role='measure' type='quantitative' />
+      <column caption='food_coded_filled.csv' datatype='table' name='[__tableau_internal_object_id__].[food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5]' role='measure' type='quantitative' />
+      <column caption='Breakfast' datatype='integer' hidden='true' name='[breakfast]' role='measure' type='quantitative' />
+      <column caption='Calories Chicken' datatype='integer' name='[calories_chicken]' role='measure' type='quantitative' />
+      <column caption='Calories Day' datatype='real' name='[calories_day]' role='dimension' type='quantitative' />
+      <column caption='Calories Scone' datatype='real' name='[calories_scone]' role='measure' type='quantitative' />
+      <column caption='Coffee' datatype='integer' name='[coffee]' role='measure' type='quantitative' />
+      <column caption='Comfort Food' datatype='string' name='[comfort_food]' role='dimension' type='nominal' />
+      <column caption='Comfort Food Reasons' datatype='string' name='[comfort_food_reasons]' role='dimension' type='nominal' />
+      <column caption='Comfort Food Reasons Coded.1' datatype='integer' name='[comfort_food_reasons_coded.1]' role='measure' type='quantitative' />
+      <column caption='Comfort Food Reasons Coded' datatype='real' name='[comfort_food_reasons_coded]' role='measure' type='quantitative' />
+      <column caption='Cook' datatype='real' name='[cook]' role='measure' type='quantitative' />
+      <column caption='Cuisine' datatype='real' name='[cuisine]' role='measure' type='quantitative' />
+      <column caption='Diet Current' datatype='string' name='[diet_current]' role='dimension' type='nominal' />
+      <column caption='Diet Current Coded' datatype='integer' name='[diet_current_coded]' role='measure' type='quantitative' />
+      <column caption='Drink' datatype='real' name='[drink]' role='measure' type='quantitative' />
+      <column caption='Eating Changes' datatype='string' name='[eating_changes]' role='dimension' type='nominal' />
+      <column caption='Eating Changes Coded1' datatype='integer' name='[eating_changes_coded1]' role='measure' type='quantitative' />
+      <column caption='Eating Changes Coded' datatype='integer' name='[eating_changes_coded]' role='measure' type='quantitative' />
+      <column caption='Eating Out' datatype='integer' name='[eating_out]' role='measure' type='quantitative' />
+      <column caption='Employment' datatype='real' hidden='true' name='[employment]' role='measure' type='quantitative' />
+      <column caption='Ethnic Food' datatype='integer' name='[ethnic_food]' role='measure' type='quantitative' />
+      <column caption='Exercise' datatype='real' name='[exercise]' role='measure' type='quantitative' />
+      <column caption='Father Education' datatype='real' hidden='true' name='[father_education]' role='measure' type='quantitative' />
+      <column caption='Father Profession' datatype='string' hidden='true' name='[father_profession]' role='dimension' type='nominal' />
+      <column caption='Fav Cuisine' datatype='string' name='[fav_cuisine]' role='dimension' type='nominal' />
+      <column caption='Fav Cuisine Coded' datatype='integer' name='[fav_cuisine_coded]' role='measure' type='quantitative' />
+      <column caption='Fav Food' datatype='real' name='[fav_food]' role='measure' type='quantitative' />
+      <column caption='Food Childhood' datatype='string' name='[food_childhood]' role='dimension' type='nominal' />
+      <column caption='Fries' datatype='integer' name='[fries]' role='measure' type='quantitative' />
+      <column caption='Fruit Day' datatype='integer' name='[fruit_day]' role='dimension' type='quantitative' />
+      <column caption='Grade Level' datatype='integer' name='[grade_level]' role='measure' type='quantitative' />
+      <column caption='Greek Food' datatype='integer' name='[greek_food]' role='measure' type='quantitative' />
+      <column caption='Healthy Feeling' datatype='integer' name='[healthy_feeling]' role='measure' type='quantitative' />
+      <column caption='Healthy Meal' datatype='string' name='[healthy_meal]' role='dimension' type='nominal' />
+      <column caption='Ideal Diet' datatype='string' name='[ideal_diet]' role='dimension' type='nominal' />
+      <column caption='Ideal Diet Coded' datatype='integer' name='[ideal_diet_coded]' role='measure' type='quantitative' />
+      <column caption='Income' datatype='real' name='[income]' role='measure' type='quantitative' />
+      <column caption='Indian Food' datatype='integer' name='[indian_food]' role='measure' type='quantitative' />
+      <column caption='Italian Food' datatype='integer' name='[italian_food]' role='measure' type='quantitative' />
+      <column caption='Life Rewarding' datatype='real' name='[life_rewarding]' role='measure' type='quantitative' />
+      <column caption='Marital Status' datatype='real' hidden='true' name='[marital_status]' role='measure' type='quantitative' />
+      <column caption='Meals Dinner Friend' datatype='string' name='[meals_dinner_friend]' role='dimension' type='nominal' />
+      <column caption='Mother Education' datatype='real' hidden='true' name='[mother_education]' role='measure' type='quantitative' />
+      <column caption='Mother Profession' datatype='string' hidden='true' name='[mother_profession]' role='dimension' type='nominal' />
+      <column caption='Nutritional Check' datatype='integer' name='[nutritional_check]' role='measure' type='quantitative' />
+      <column caption='On Off Campus' datatype='real' hidden='true' name='[on_off_campus]' role='measure' type='quantitative' />
+      <column caption='Parents Cook' datatype='integer' name='[parents_cook]' role='measure' type='quantitative' />
+      <column caption='Pay Meal Out' datatype='integer' name='[pay_meal_out]' role='measure' type='quantitative' />
+      <column caption='Persian Food' datatype='real' name='[persian_food]' role='measure' type='quantitative' />
+      <column caption='Self Perception Weight' datatype='real' name='[self_perception_weight]' role='measure' type='quantitative' />
+      <column caption='Soup' datatype='real' name='[soup]' role='measure' type='quantitative' />
+      <column caption='Sports' datatype='real' hidden='true' name='[sports]' role='measure' type='quantitative' />
+      <column caption='Thai Food' datatype='integer' name='[thai_food]' role='measure' type='quantitative' />
+      <column caption='Tortilla Calories' datatype='real' name='[tortilla_calories]' role='measure' type='quantitative' />
+      <column caption='Turkey Calories' datatype='integer' name='[turkey_calories]' role='measure' type='quantitative' />
+      <column caption='Type Sports' datatype='string' hidden='true' name='[type_sports]' role='dimension' type='nominal' />
+      <column caption='Veggies Day' datatype='integer' name='[veggies_day]' role='dimension' type='quantitative' />
+      <column caption='Vitamins' datatype='integer' name='[vitamins]' role='measure' type='quantitative' />
+      <column caption='Waffle Calories' datatype='integer' name='[waffle_calories]' role='measure' type='quantitative' />
+      <column caption='Weight' datatype='integer' name='[weight]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_0586883905634304]' derivation='None' name='[none:Calculation_0586883905634304:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_0586883905634304:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Comfort Food Reasons (group) 1]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Boredom&quot;</bucket>
+            </map>
+            <map to='#5485b2'>
+              <bucket>&quot;Stress&quot;</bucket>
+            </map>
+            <map to='#72a3c9'>
+              <bucket>&quot;Sadness&quot;</bucket>
+            </map>
+            <map to='#92c0df'>
+              <bucket>&quot;None&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Happiness&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='GPA' />
+        <field-sort-custom-order field='Gender' />
+        <field-sort-custom-order field='Calculation_0586883905634304' />
+        <field-sort-custom-order field='breakfast' />
+        <field-sort-custom-order field='Calculation_0586883906187265' />
+        <field-sort-custom-order field='calories_chicken' />
+        <field-sort-custom-order field='calories_day' />
+        <field-sort-custom-order field='calories_scone' />
+        <field-sort-custom-order field='coffee' />
+        <field-sort-custom-order field='comfort_food' />
+        <field-sort-custom-order field='comfort_food_reasons' />
+        <field-sort-custom-order field='comfort_food_reasons_coded' />
+        <field-sort-custom-order field='cook' />
+        <field-sort-custom-order field='comfort_food_reasons_coded.1' />
+        <field-sort-custom-order field='Calculation_0791668560752640' />
+        <field-sort-custom-order field='cuisine' />
+        <field-sort-custom-order field='diet_current' />
+        <field-sort-custom-order field='diet_current_coded' />
+        <field-sort-custom-order field='drink' />
+        <field-sort-custom-order field='eating_changes' />
+        <field-sort-custom-order field='eating_changes_coded' />
+        <field-sort-custom-order field='eating_changes_coded1' />
+        <field-sort-custom-order field='eating_out' />
+        <field-sort-custom-order field='employment' />
+        <field-sort-custom-order field='ethnic_food' />
+        <field-sort-custom-order field='exercise' />
+        <field-sort-custom-order field='father_education' />
+        <field-sort-custom-order field='father_profession' />
+        <field-sort-custom-order field='fav_cuisine' />
+        <field-sort-custom-order field='fav_cuisine_coded' />
+        <field-sort-custom-order field='fav_food' />
+        <field-sort-custom-order field='food_childhood' />
+        <field-sort-custom-order field='fries' />
+        <field-sort-custom-order field='fruit_day' />
+        <field-sort-custom-order field='grade_level' />
+        <field-sort-custom-order field='greek_food' />
+        <field-sort-custom-order field='healthy_feeling' />
+        <field-sort-custom-order field='healthy_meal' />
+        <field-sort-custom-order field='ideal_diet' />
+        <field-sort-custom-order field='ideal_diet_coded' />
+        <field-sort-custom-order field='income' />
+        <field-sort-custom-order field='indian_food' />
+        <field-sort-custom-order field='italian_food' />
+        <field-sort-custom-order field='life_rewarding' />
+        <field-sort-custom-order field='marital_status' />
+        <field-sort-custom-order field='meals_dinner_friend' />
+        <field-sort-custom-order field='mother_education' />
+        <field-sort-custom-order field='mother_profession' />
+        <field-sort-custom-order field='nutritional_check' />
+        <field-sort-custom-order field='on_off_campus' />
+        <field-sort-custom-order field='parents_cook' />
+        <field-sort-custom-order field='pay_meal_out' />
+        <field-sort-custom-order field='persian_food' />
+        <field-sort-custom-order field='self_perception_weight' />
+        <field-sort-custom-order field='soup' />
+        <field-sort-custom-order field='sports' />
+        <field-sort-custom-order field='thai_food' />
+        <field-sort-custom-order field='tortilla_calories' />
+        <field-sort-custom-order field='turkey_calories' />
+        <field-sort-custom-order field='type_sports' />
+        <field-sort-custom-order field='veggies_day' />
+        <field-sort-custom-order field='vitamins' />
+        <field-sort-custom-order field='waffle_calories' />
+        <field-sort-custom-order field='weight' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Parameter 1' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Vitamins &quot;'>
+          <calculation class='tableau' formula='&quot;Vitamins &quot;' />
+        </column>
+        <column caption='Parameter 2' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Indian_food&quot;'>
+          <calculation class='tableau' formula='&quot;Indian_food&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='food_coded_filled.csv' id='food_coded_filled.csv_110221BF6BFD456C8A2140448AAE4EC5'>
+            <properties context=''>
+              <relation connection='textscan.1sglni70spj3dl12s9w8n0whtxrq' name='food_coded_filled.csv' table='[food_coded_filled#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='real' name='GPA' ordinal='0' />
+                  <column datatype='integer' name='Gender' ordinal='1' />
+                  <column datatype='integer' name='breakfast' ordinal='2' />
+                  <column datatype='integer' name='calories_chicken' ordinal='3' />
+                  <column datatype='real' name='calories_day' ordinal='4' />
+                  <column datatype='real' name='calories_scone' ordinal='5' />
+                  <column datatype='integer' name='coffee' ordinal='6' />
+                  <column datatype='string' name='comfort_food' ordinal='7' />
+                  <column datatype='string' name='comfort_food_reasons' ordinal='8' />
+                  <column datatype='real' name='comfort_food_reasons_coded' ordinal='9' />
+                  <column datatype='real' name='cook' ordinal='10' />
+                  <column datatype='integer' name='comfort_food_reasons_coded.1' ordinal='11' />
+                  <column datatype='real' name='cuisine' ordinal='12' />
+                  <column datatype='string' name='diet_current' ordinal='13' />
+                  <column datatype='integer' name='diet_current_coded' ordinal='14' />
+                  <column datatype='real' name='drink' ordinal='15' />
+                  <column datatype='string' name='eating_changes' ordinal='16' />
+                  <column datatype='integer' name='eating_changes_coded' ordinal='17' />
+                  <column datatype='integer' name='eating_changes_coded1' ordinal='18' />
+                  <column datatype='integer' name='eating_out' ordinal='19' />
+                  <column datatype='real' name='employment' ordinal='20' />
+                  <column datatype='integer' name='ethnic_food' ordinal='21' />
+                  <column datatype='real' name='exercise' ordinal='22' />
+                  <column datatype='real' name='father_education' ordinal='23' />
+                  <column datatype='string' name='father_profession' ordinal='24' />
+                  <column datatype='string' name='fav_cuisine' ordinal='25' />
+                  <column datatype='integer' name='fav_cuisine_coded' ordinal='26' />
+                  <column datatype='real' name='fav_food' ordinal='27' />
+                  <column datatype='string' name='food_childhood' ordinal='28' />
+                  <column datatype='integer' name='fries' ordinal='29' />
+                  <column datatype='integer' name='fruit_day' ordinal='30' />
+                  <column datatype='integer' name='grade_level' ordinal='31' />
+                  <column datatype='integer' name='greek_food' ordinal='32' />
+                  <column datatype='integer' name='healthy_feeling' ordinal='33' />
+                  <column datatype='string' name='healthy_meal' ordinal='34' />
+                  <column datatype='string' name='ideal_diet' ordinal='35' />
+                  <column datatype='integer' name='ideal_diet_coded' ordinal='36' />
+                  <column datatype='real' name='income' ordinal='37' />
+                  <column datatype='integer' name='indian_food' ordinal='38' />
+                  <column datatype='integer' name='italian_food' ordinal='39' />
+                  <column datatype='real' name='life_rewarding' ordinal='40' />
+                  <column datatype='real' name='marital_status' ordinal='41' />
+                  <column datatype='string' name='meals_dinner_friend' ordinal='42' />
+                  <column datatype='real' name='mother_education' ordinal='43' />
+                  <column datatype='string' name='mother_profession' ordinal='44' />
+                  <column datatype='integer' name='nutritional_check' ordinal='45' />
+                  <column datatype='real' name='on_off_campus' ordinal='46' />
+                  <column datatype='integer' name='parents_cook' ordinal='47' />
+                  <column datatype='integer' name='pay_meal_out' ordinal='48' />
+                  <column datatype='real' name='persian_food' ordinal='49' />
+                  <column datatype='real' name='self_perception_weight' ordinal='50' />
+                  <column datatype='real' name='soup' ordinal='51' />
+                  <column datatype='real' name='sports' ordinal='52' />
+                  <column datatype='integer' name='thai_food' ordinal='53' />
+                  <column datatype='real' name='tortilla_calories' ordinal='54' />
+                  <column datatype='integer' name='turkey_calories' ordinal='55' />
+                  <column datatype='string' name='type_sports' ordinal='56' />
+                  <column datatype='integer' name='veggies_day' ordinal='57' />
+                  <column datatype='integer' name='vitamins' ordinal='58' />
+                  <column datatype='integer' name='waffle_calories' ordinal='59' />
+                  <column datatype='integer' name='weight' ordinal='60' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_coded_filled' name='federated.1ajmkla04646dh1dlp1b30blyxzz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ajmkla04646dh1dlp1b30blyxzz'>
+            <column datatype='real' name='[GPA]' role='measure' type='quantitative' />
+            <column-instance column='[grade_level]' derivation='Avg' name='[avg:grade_level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GPA]' derivation='Count' name='[cnt:GPA:qk]' pivot='key' type='quantitative' />
+            <column caption='Grade Level' datatype='integer' name='[grade_level]' role='measure' type='quantitative' />
+            <column-instance column='[GPA]' derivation='Sum' name='[sum:GPA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[grade_level]' derivation='Sum' name='[sum:grade_level:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:GPA:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ajmkla04646dh1dlp1b30blyxzz].[sum:GPA:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ajmkla04646dh1dlp1b30blyxzz].[sum:grade_level:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:GPA:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ajmkla04646dh1dlp1b30blyxzz].[sum:GPA:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1ajmkla04646dh1dlp1b30blyxzz].[avg:grade_level:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1ajmkla04646dh1dlp1b30blyxzz].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ajmkla04646dh1dlp1b30blyxzz].[:Measure Names]</rows>
+        <cols>[federated.1ajmkla04646dh1dlp1b30blyxzz].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{4008CC50-7FC4-4990-84A4-3CCB75563100}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'> Breakfast Consumption</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_coded_filled' name='federated.1ajmkla04646dh1dlp1b30blyxzz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ajmkla04646dh1dlp1b30blyxzz'>
+            <column caption='Gender1' datatype='string' name='[Calculation_0586883905634304]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Gender] = 1 THEN &quot;Female&quot;&#13;&#10;ELSE &quot;Male&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Breakfast1' datatype='string' name='[Calculation_0586883906187265]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [breakfast] = 1 THEN &quot;Cerals&quot;&#13;&#10;ELSE &quot;Donut&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[GPA]' role='measure' type='quantitative' />
+            <column datatype='integer' hidden='true' name='[Gender]' role='measure' type='quantitative' />
+            <column caption='Breakfast' datatype='integer' hidden='true' name='[breakfast]' role='measure' type='quantitative' />
+            <column-instance column='[GPA]' derivation='Count' name='[cnt:GPA:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0586883905634304]' derivation='None' name='[none:Calculation_0586883905634304:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0586883906187265]' derivation='None' name='[none:Calculation_0586883906187265:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0586883905634304:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0586883905634304:nk]' member='&quot;Male&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0586883905634304:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0586883906187265:nk]</rows>
+        <cols>[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:GPA:qk]</cols>
+      </table>
+      <simple-id uuid='{4A296292-0426-4FFD-87FF-470376B82B9F}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='18'>Eating Out  VS  Cooking</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_coded_filled' name='federated.1ajmkla04646dh1dlp1b30blyxzz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ajmkla04646dh1dlp1b30blyxzz'>
+            <column datatype='real' name='[GPA]' role='measure' type='quantitative' />
+            <column-instance column='[GPA]' derivation='Count' name='[cnt:GPA:qk]' pivot='key' type='quantitative' />
+            <column caption='Cook' datatype='real' name='[cook]' role='measure' type='quantitative' />
+            <column caption='Eating Out' datatype='integer' name='[eating_out]' role='measure' type='quantitative' />
+            <column-instance column='[cook]' derivation='None' name='[none:cook:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[eating_out]' derivation='None' name='[none:eating_out:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:eating_out:qk]' field-type='quantitative' max='9' min='0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:GPA:qk]' field-type='quantitative' max='70' min='-15' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:eating_out:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:cook:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:GPA:qk]</rows>
+        <cols>([federated.1ajmkla04646dh1dlp1b30blyxzz].[none:eating_out:qk] + [federated.1ajmkla04646dh1dlp1b30blyxzz].[none:cook:qk])</cols>
+      </table>
+      <simple-id uuid='{D146602A-0BC8-4046-8E1E-448F044A2124}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Google Sans,Google Sans,Roboto,Arial,sans-serif' fontsize='21'>Health category by Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_coded_filled' name='federated.1ajmkla04646dh1dlp1b30blyxzz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ajmkla04646dh1dlp1b30blyxzz'>
+            <column caption='Gender1' datatype='string' name='[Calculation_0586883905634304]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Gender] = 1 THEN &quot;Female&quot;&#13;&#10;ELSE &quot;Male&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Health' datatype='string' name='[Calculation_0791668560752640]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF  [fruit_day] &gt;=4&#13;&#10;AND [fries] &lt;=2&#13;&#10;AND [veggies_day]&gt;=4&#13;&#10;AND [exercise]&gt;=1&#13;&#10;THEN &quot;Healthy&quot;&#13;&#10;ELSE &quot;Unhealthy&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[GPA]' role='measure' type='quantitative' />
+            <column datatype='integer' hidden='true' name='[Gender]' role='measure' type='quantitative' />
+            <column-instance column='[GPA]' derivation='Count' name='[cnt:GPA:qk]' pivot='key' type='quantitative' />
+            <column caption='Exercise' datatype='real' name='[exercise]' role='measure' type='quantitative' />
+            <column caption='Fries' datatype='integer' name='[fries]' role='measure' type='quantitative' />
+            <column caption='Fruit Day' datatype='integer' name='[fruit_day]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_0586883905634304]' derivation='None' name='[none:Calculation_0586883905634304:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0791668560752640]' derivation='None' name='[none:Calculation_0791668560752640:nk]' pivot='key' type='nominal' />
+            <column caption='Veggies Day' datatype='integer' name='[veggies_day]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0586883905634304:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:GPA:qk]</rows>
+        <cols>([federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0791668560752640:nk] / [federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0586883905634304:nk])</cols>
+      </table>
+      <simple-id uuid='{6F271D1A-E731-4779-BEBC-B0EE02F49DFF}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;</run>
+            <run>[Parameters].[Parameter 1]</run>
+            <run>&gt; Consumption</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_coded_filled' name='federated.1ajmkla04646dh1dlp1b30blyxzz' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Parameter 1' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Vitamins &quot;'>
+              <calculation class='tableau' formula='&quot;Vitamins &quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ajmkla04646dh1dlp1b30blyxzz'>
+            <column caption='Calculation1' datatype='integer' name='[Calculation_0791668563931137]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 1]=&quot;Veggies Day&quot; THEN [veggies_day]&#13;&#10;ELSEIF [Parameters].[Parameter 1]=&quot;Vitamins&quot; THEN [vitamins]&#13;&#10;ELSE [fruit_day]&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[GPA]' role='measure' type='quantitative' />
+            <column-instance column='[GPA]' derivation='Count' name='[cnt:GPA:qk]' pivot='key' type='quantitative' />
+            <column caption='Fruit Day' datatype='integer' name='[fruit_day]' role='dimension' type='quantitative' />
+            <column-instance column='[Calculation_0791668563931137]' derivation='None' name='[none:Calculation_0791668563931137:qk]' pivot='key' type='quantitative' />
+            <column caption='Veggies Day' datatype='integer' name='[veggies_day]' role='dimension' type='quantitative' />
+            <column caption='Vitamins' datatype='integer' name='[vitamins]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:GPA:qk]</rows>
+        <cols>[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0791668563931137:qk]</cols>
+      </table>
+      <simple-id uuid='{E50F4114-C49C-4336-BB73-8AE139B5024F}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Google Sans,Google Sans,Roboto,Arial,sans-serif' fontsize='21'>Health vs &lt;</run>
+            <run fontcolor='#000000' fontname='Google Sans,Google Sans,Roboto,Arial,sans-serif' fontsize='21'>[Parameters].[Parameter 2]</run>
+            <run fontcolor='#000000' fontname='Google Sans,Google Sans,Roboto,Arial,sans-serif' fontsize='21'>&gt;Consumption</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_coded_filled' name='federated.1ajmkla04646dh1dlp1b30blyxzz' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Parameter 2' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Indian_food&quot;'>
+              <calculation class='tableau' formula='&quot;Indian_food&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1ajmkla04646dh1dlp1b30blyxzz'>
+            <column caption='Gender1' datatype='string' name='[Calculation_0586883905634304]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Gender] = 1 THEN &quot;Female&quot;&#13;&#10;ELSE &quot;Male&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Health' datatype='string' name='[Calculation_0791668560752640]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF  [fruit_day] &gt;=4&#13;&#10;AND [fries] &lt;=2&#13;&#10;AND [veggies_day]&gt;=4&#13;&#10;AND [exercise]&gt;=1&#13;&#10;THEN &quot;Healthy&quot;&#13;&#10;ELSE &quot;Unhealthy&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Calculation2' datatype='real' name='[Calculation_0791668566949890]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Parameters].[Parameter 2] = &quot;Thai_Food&quot; THEN [thai_food]&#13;&#10;ELSEIF [Parameters].[Parameter 2] =&quot;Indian_Food&quot; THEN [indian_food]&#13;&#10;ELSEIF [Parameters].[Parameter 2] =&quot;Greek_Food&quot; THEN [greek_food]&#13;&#10;ELSEIF [Parameters].[Parameter 2]=&quot;Italian_Food&quot; THEN [italian_food]&#13;&#10;ELSE [persian_food]&#13;&#10;END' />
+            </column>
+            <column datatype='integer' hidden='true' name='[Gender]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0586883905634304]' derivation='Count' name='[cnt:Calculation_0586883905634304:qk]' pivot='key' type='quantitative' />
+            <column caption='Exercise' datatype='real' name='[exercise]' role='measure' type='quantitative' />
+            <column caption='Fries' datatype='integer' name='[fries]' role='measure' type='quantitative' />
+            <column caption='Fruit Day' datatype='integer' name='[fruit_day]' role='dimension' type='quantitative' />
+            <column caption='Greek Food' datatype='integer' name='[greek_food]' role='measure' type='quantitative' />
+            <column caption='Indian Food' datatype='integer' name='[indian_food]' role='measure' type='quantitative' />
+            <column caption='Italian Food' datatype='integer' name='[italian_food]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0791668560752640]' derivation='None' name='[none:Calculation_0791668560752640:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0791668566949890]' derivation='None' name='[none:Calculation_0791668566949890:qk]' pivot='key' type='quantitative' />
+            <column caption='Persian Food' datatype='real' name='[persian_food]' role='measure' type='quantitative' />
+            <column caption='Thai Food' datatype='integer' name='[thai_food]' role='measure' type='quantitative' />
+            <column caption='Veggies Day' datatype='integer' name='[veggies_day]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0791668566949890:qk]' field-type='quantitative' max='5.4988075857604271' min='-0.21284586917526097' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:Calculation_0586883905634304:qk]' field-type='quantitative' max='19' min='-1' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:Calculation_0586883905634304:qk]</rows>
+        <cols>([federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0791668560752640:nk] * [federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0791668566949890:qk])</cols>
+      </table>
+      <simple-id uuid='{57FC1413-1743-42C8-B245-ADAE218C2B05}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Google Sans,Google Sans,Roboto,Arial,sans-serif' fontsize='21'>People Feeling Healthy and Life Rewarded</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_coded_filled' name='federated.1ajmkla04646dh1dlp1b30blyxzz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ajmkla04646dh1dlp1b30blyxzz'>
+            <column caption='Gender1' datatype='string' name='[Calculation_0586883905634304]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Gender] = 1 THEN &quot;Female&quot;&#13;&#10;ELSE &quot;Male&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' hidden='true' name='[Gender]' role='measure' type='quantitative' />
+            <column caption='Healthy Feeling' datatype='integer' name='[healthy_feeling]' role='measure' type='quantitative' />
+            <column caption='Life Rewarding' datatype='real' name='[life_rewarding]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0586883905634304]' derivation='None' name='[none:Calculation_0586883905634304:nk]' pivot='key' type='nominal' />
+            <column-instance column='[healthy_feeling]' derivation='None' name='[none:healthy_feeling:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[life_rewarding]' derivation='Sum' name='[sum:life_rewarding:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0586883905634304:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0586883905634304:nk]' member='&quot;Male&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0586883905634304:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[sum:life_rewarding:qk]' />
+              <text column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:healthy_feeling:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-color' value='#ff9da7' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{ED5C260D-A50F-4367-8CCF-E122DF503E1F}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Google Sans,Google Sans,Roboto,Arial,sans-serif' fontsize='21'>Weight vs. Exercise Frequency</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_coded_filled' name='federated.1ajmkla04646dh1dlp1b30blyxzz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ajmkla04646dh1dlp1b30blyxzz'>
+            <column caption='Gender1' datatype='string' name='[Calculation_0586883905634304]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Gender] = 1 THEN &quot;Female&quot;&#13;&#10;ELSE &quot;Male&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' hidden='true' name='[Gender]' role='measure' type='quantitative' />
+            <column-instance column='[exercise]' derivation='Count' name='[cnt:exercise:qk]' pivot='key' type='quantitative' />
+            <column caption='Exercise' datatype='real' name='[exercise]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0586883905634304]' derivation='None' name='[none:Calculation_0586883905634304:nk]' pivot='key' type='nominal' />
+            <column-instance column='[weight]' derivation='None' name='[none:weight:qk]' pivot='key' type='quantitative' />
+            <column caption='Weight' datatype='integer' name='[weight]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0586883905634304:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0586883905634304:nk]' member='&quot;Male&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0586883905634304:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:exercise:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:exercise:qk]' />
+              <size column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:exercise:qk]' />
+              <text column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:weight:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4C05B192-5AA3-4EFD-9BBB-A60727A62A56}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Google Sans,Google Sans,Roboto,Arial,sans-serif' fontsize='21'>comfort food reason</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food_coded_filled' name='federated.1ajmkla04646dh1dlp1b30blyxzz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ajmkla04646dh1dlp1b30blyxzz'>
+            <column datatype='string' name='[Comfort Food Reasons (group) 1]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[comfort_food_reasons]' new-bin='true'>
+                <bin default-name='false' value='&quot;Boredom&quot;'>
+                  <value>&quot;boredom&quot;</value>
+                  <value>&quot;Boredom&quot;</value>
+                  <value>&quot;Boredom comfort hunger&quot;</value>
+                  <value>&quot;Boredom usually&quot;</value>
+                  <value>&quot;Boredom, anger and just being hungry in general.&quot;</value>
+                  <value>&quot;Boredom, anger, drunkeness&quot;</value>
+                  <value>&quot;boredom, anger, happy&quot;</value>
+                  <value>&quot;Boredom, being in your period, and long bus rides for softball&quot;</value>
+                  <value>&quot;Boredom, hunger, snacking.&quot;</value>
+                  <value>&quot;Boredom, laziness, anger&quot;</value>
+                  <value>&quot;Boredom, lazyniss &quot;</value>
+                  <value>&quot;Boredom. Celebration.&quot;</value>
+                  <value>&quot;Friends, environment and boredom&quot;</value>
+                  <value>&quot;Hunger and Boredom&quot;</value>
+                  <value>&quot;Hunger, boredom&quot;</value>
+                  <value>&quot;I usually only eat comfort foods when I am bored. I will also eat them when I am happy to celebrate and then when I am sad to comfort me.&quot;</value>
+                  <value>&quot;loneliness, homework, boredom &quot;</value>
+                  <value>&quot;Mostly boredom&quot;</value>
+                  <value>&quot;stres, boredom, and nighttime&quot;</value>
+                  <value>&quot;they are yummy, my boyfriend sometimes makes me sad, boredom&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Happiness&quot;'>
+                  <value>&quot;Bordem, happiness, sadness&quot;</value>
+                  <value>&quot;Boredom, happiness, distraught &quot;</value>
+                  <value>&quot;Happiness, boredom, social event&quot;</value>
+                  <value>&quot;happiness, hunger, sadness&quot;</value>
+                  <value>&quot;Happiness, sadness, celebration.&quot;</value>
+                  <value>&quot;happiness, satisfaction&quot;</value>
+                  <value>&quot;happiness, they are some of my favorite foods&quot;</value>
+                  <value>&quot;Sadness, happiness and boredom&quot;</value>
+                  <value>&quot;sadness, happiness and hunger&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;None&quot;'>
+                  <value>&quot;A long day, not feeling well, winter &quot;</value>
+                  <value>&quot;Anxiousness, watching TV I desire \&quot;comfort food\&quot; &quot;</value>
+                  <value>&quot;hormones, Premenstrual syndrome.&quot;</value>
+                  <value>&quot;I usually only eat comfort food when I&apos;m bored, if i am doing something, i can go for hours without eating &quot;</value>
+                  <value>&quot;laziness and hungover&quot;</value>
+                  <value>&quot;Lazy&quot;</value>
+                  <value>&quot;No reasons&quot;</value>
+                  <value>&quot;None, i don&apos;t eat comfort food. I just eat when i&apos;m hungry.&quot;</value>
+                  <value>&quot;Sad, bored, excited&quot;</value>
+                  <value>&quot;survival, bored&quot;</value>
+                  <value>&quot;They taste better than other food. They are a pickme up. They are easy to make&quot;</value>
+                  <value>&quot;Tired&quot;</value>
+                  <value>&quot;Usually if I&apos;m sad or depressed.&quot;</value>
+                  <value>&quot;we dont have comfort&quot;</value>
+                  <value>&quot;when i am sad or craving&quot;</value>
+                  <value>&quot;When i&apos;m  eating with my close friends/ Food smell or look good/ when I feel tired&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Sadness&quot;'>
+                  <value>&quot;All of the above; sadness, boredom and confusion &quot;</value>
+                  <value>&quot;Anger, sadness&quot;</value>
+                  <value>&quot;Bad day, bored, sadness&quot;</value>
+                  <value>&quot;boredom and sadness&quot;</value>
+                  <value>&quot;Boredom and sadness&quot;</value>
+                  <value>&quot;boredom, sadness&quot;</value>
+                  <value>&quot;Boredom, sadness&quot;</value>
+                  <value>&quot;boredom, sadness &quot;</value>
+                  <value>&quot;Boredom, sadness and anger &quot;</value>
+                  <value>&quot;boredom, sadness, and if it has a good taste. &quot;</value>
+                  <value>&quot;Boredom, sadness, anxiety&quot;</value>
+                  <value>&quot;boredom, sadness, hungry&quot;</value>
+                  <value>&quot;Boredom, sadness, or with friends &quot;</value>
+                  <value>&quot;Boredom!, sadness&quot;</value>
+                  <value>&quot;I do not really eat \&quot;comfort food\&quot; but I guess sadness, special occasions, and anxiety &quot;</value>
+                  <value>&quot;Loneliness / Homesick / Sadness&quot;</value>
+                  <value>&quot;sadness&quot;</value>
+                  <value>&quot;Sadness and cravings&quot;</value>
+                  <value>&quot;sadness, boredom, &amp; anger &quot;</value>
+                  <value>&quot;Sadness, boredom, late night snack &quot;</value>
+                  <value>&quot;Sadness, boredom, lonely.&quot;</value>
+                  <value>&quot;sadness, depression &quot;</value>
+                  <value>&quot;Sadness, Loneliness, Boredom&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Stress&quot;'>
+                  <value>&quot;bored, stress&quot;</value>
+                  <value>&quot;boredom and stress&quot;</value>
+                  <value>&quot;Boredom and stress&quot;</value>
+                  <value>&quot;boredom, stress&quot;</value>
+                  <value>&quot;Boredom, stress&quot;</value>
+                  <value>&quot;Boredom, stress, and it tastes good&quot;</value>
+                  <value>&quot;boredom, stress, mood swings&quot;</value>
+                  <value>&quot;boredom, stressed, sad&quot;</value>
+                  <value>&quot;Depression, comfort, accessibility &quot;</value>
+                  <value>&quot;I am always stressed out, and bored when I am in my apartment. &quot;</value>
+                  <value>&quot;I eat comfort food when im stressed out from school(finals week), when I`m sad, or when i am dealing with personal family issues.&quot;</value>
+                  <value>&quot;Just cause&quot;</value>
+                  <value>&quot;Mostly Stress&quot;</value>
+                  <value>&quot;Sadness, stress&quot;</value>
+                  <value>&quot;sadness, stress, cold weather&quot;</value>
+                  <value>&quot;sadness, stressed, boredom&quot;</value>
+                  <value>&quot;Stress&quot;</value>
+                  <value>&quot;Stress and boredom&quot;</value>
+                  <value>&quot;Stress and sadness&quot;</value>
+                  <value>&quot;stress,  boredom, special occasions&quot;</value>
+                  <value>&quot;stress, anger and boredom&quot;</value>
+                  <value>&quot;Stress, anger and sadness &quot;</value>
+                  <value>&quot;Stress, bored, anger&quot;</value>
+                  <value>&quot;stress, boredom&quot;</value>
+                  <value>&quot;Stress, boredom&quot;</value>
+                  <value>&quot;Stress, boredom and physical activity&quot;</value>
+                  <value>&quot;stress, boredom, cold weather&quot;</value>
+                  <value>&quot;stress, boredom, college as whole &quot;</value>
+                  <value>&quot;Stress, boredom, craving&quot;</value>
+                  <value>&quot;Stress, boredom, cravings &quot;</value>
+                  <value>&quot;Stress, boredom, sadness&quot;</value>
+                  <value>&quot;Stress, frustration, self-consciousness &quot;</value>
+                  <value>&quot;stress, sadness&quot;</value>
+                  <value>&quot;Stress, sadness, bored &quot;</value>
+                  <value>&quot;Stress, sadness, boredom&quot;</value>
+                  <value>&quot;stressed, upset, or just craving a cheat meal&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='real' name='[GPA]' role='measure' type='quantitative' />
+            <column-instance column='[GPA]' derivation='Count' name='[cnt:GPA:qk]' pivot='key' type='quantitative' />
+            <column caption='Comfort Food Reasons' datatype='string' name='[comfort_food_reasons]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:GPA:qk]' />
+              <text column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[Comfort Food Reasons (group) 1]' />
+              <color column='[federated.1ajmkla04646dh1dlp1b30blyxzz].[Comfort Food Reasons (group) 1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{683D607B-EB8E-402F-9356-3AFA220888D4}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{325A8764-87D4-4E79-8BC6-338F833C79A1}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2C27E0F1-D1DF-446E-AAC1-16FA0221D115}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C039E0E6-687E-4EE5-AE6F-878D95D435E9}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ajmkla04646dh1dlp1b30blyxzz].[none:Calculation_0586883905634304:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{19BF7F06-21A0-4CFC-B8EA-8A1AF3CFFB5D}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3CBCE54C-78E5-4C59-8B9B-D917DC23437F}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 2]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A00BF65A-79A5-4F27-802B-3A121E43428B}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EEB3E46F-A83E-4C55-BAA4-C926C00B4046}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:exercise:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{40BA237F-6F37-468D-97DD-9148382447B7}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ajmkla04646dh1dlp1b30blyxzz].[Comfort Food Reasons (group) 1]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ajmkla04646dh1dlp1b30blyxzz].[Comfort Food Reasons (group)]</field>
+            <field>[federated.1ajmkla04646dh1dlp1b30blyxzz].[cnt:GPA:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BE40FF86-4045-44CC-8ED4-E6CBC2F63118}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='135' name='Sheet 1' width='192'>
+      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
+      VSMCEFTN/wM5Rdt8SpdmvwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAKCklEQVR4nO3d23JT5xmH8WctSd5hY4yNwQYSwIDZxUkzzbRp2pl20p73FnrSq+gFdKZX
+      0YPeQHvSo0wP2qQFg8HYMo4NNrbx3gZvZW2+7+uBwxSYtrG0FkLJ+//NcIBnePVpSc/ykpZY
+      ikIIARGj4ne9AJF3SQGIaQpATFMAYpoCENMUgJimAMS0ugUQQiCNUw7e+4aaE0LAe685/0Na
+      2/nlrLTn1C2At7H4RpiT5qy0nrhphd1Ic+A7HoBII1IAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      adl63tgX92YoVVyiGd4H4iiCKNlavPPEcZx4DuHwxEqcSbgvCeBDII6TLSiEw5NPyecECBAl
+      neMDRBBFSTf0N49Z0u38xpy6BvDHvz5ga69Yz5sU+b90CCSmKQAxTQGIaQpATFMAYpoCENMU
+      gJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMU
+      gJimAMQ0BSCmKQAxTQGIaUcLIHhmpx4xlp+k5L79G/+eLS4mXZdIXRzp4rjz0+P49rMM9rQT
+      B8fM9GMybV3093Sws1tgp1CmJSqyuX3Ae5cGWN/YoP9ML7NPnkBzBxfP973t+yFSkyP9BtjY
+      LnC+t4tcromVuSmi9lPsLc+wtLLIVyOP6Onp4lj7cXLsMTYxC8DB1irLW2V6u0+8zfWLJHKk
+      AI63NrG+vY/3joPCPnOzM5RzbTTFcHHgCq25mNGxcTp7esi4wy8hbu48zeX+Tm7fuUeybwQQ
+      eXuOdAh0cfAG+fE8qws5rgxcY29qCuIsxzpOErsmiGK6T3SwvLpF7+kz5LIOVyqwsrZJT+9p
+      YiC972UXSU8U0voe+2/hnOM3v/+zviBDGoreBhXTFICYpgDENAUgpikAMU0BiGkKQExTAGKa
+      AhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKa
+      AhDTFICYdqRrg6alr7udY61NyYaEAFGUfDFpzUlzVqPNaTRvYfvU9dqgcRwTJbwDlUqFTCbT
+      MHNCCDjnyGaT7UvSmuO9J4RAJpNpiDnOOaIoIo6TH2xUKpXE2+fNOToEEtMUgJimAMQ0BSCm
+      KQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJhW1/8TXCw7
+      kv6PTuccsQ9ECSdVnCPrEy7mlVku4awAZLU7qru6BvDbP/yFrb1iPW/yO6OlKcuffvfrd70M
+      c7TPEdMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMA
+      YpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMS0owUQPHu7uxSKJUJ4yysS
+      qaOjBVB6zr/u5pmeeEh+eg6Ag/09ys4TQsA7x37hgEAghG/+eM9kfoxi2aFmpFEd+erQPafP
+      8cG1Pu4P32Nx7oC1HU9xd5vrA2f4cnyRnhZH/9UhtpZXuHypj4npWRaeTFH0Tdy4dTXxZdFF
+      3oaqXgOEAB54tr7N0I1B+nvaeb6zz+nzAwxcOEupVKJcLkPwlH1EX/9Zrl2/Wt9rsItU4WjP
+      zShmZeEx5Z0Fuvou0BnvMTwySqVU4oMrZ9jdi4njLNkoR2FnjbH8LqH5BB1tzeTHJ7k1NKjf
+      ANKQjhZAUxe/+uXPXvtRZ2+ZOJMljiJudB/+7DjQf/KnBCLiOAIC3gdiwKW6bJF01Hx0ks3m
+      /uvPozh+ZW//MgSRxqTzAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDE
+      NAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTohDq85UX
+      zjmeLL3A+2Q357wnfu3yi7WvJ5PJJJyS3qwoirjU10k2m+xa2t4ffmdD0vWkNcc5RxRFxHHy
+      fW2lUkm8fd6cU9crl18+e5IoSvbUrVQqZDKZhpkTQsA5l/iBeTlH6kuHQGKaAhDTFICYpgDE
+      NAUgpikAMU0BiGkKQEyr65ngNG4qhJD45BUcnulM4+xkmrPSum9pzHn5WDXKHEhvO786p65n
+      gtM48+qcO/woRIPMeflkS/qRgRAC3vuGmeO9B0j8hEtrDnzHPwqR1t620eakOauR5qSxx05z
+      DpDaZ7denVO3QyCRRlT3F8EH+zusrm/W9HogeMfG+ipbu/uJ1+FdmZ29QuI5hd1tVlbXcEk+
+      5RoCLzbXeb61S61TQvDs7x/eH+/KrK6sUKxU/+G6V+e4SonVlRX2i+VEcwDKBwUKNc0J7O3/
+      5/Hefr7O+uZW1dvp1TnBO9ZWV9jdP6hzAKHM8PADdtbm+Xp+rep/vr78jO29IhP3Rigk/L31
+      9fgYdx6MJppR3ttkdHIW58pUXO0LWp15xOz6DgtTYyw9ryVux+TYKP8ceQjAxOh99ooH3L37
+      oOo5E6P3uf1gHICFp7OUKhVGRkaqnFNh/P4Iww8nDv8aPPdH/k5+Yr7KObDw+BFf/OMOAJuL
+      T5hZ3qJcPMBXOWduKs/fvhoGID96j71ihYcjd+scwO4KLWeucOnaVXZWqw/gVP95+rrbKWdy
+      NCVYxvb6ArSfpj2X7O4vzs5SqhSZm1/C17zvhvauLjYX59nYLdHRWss9ixm89SHdx1sBT9Fn
+      uPDe++Qy1T5NYq4P/YCu9mYA3r90hWM5T66lvco5GW5+9DGdbTkgMD89wZlLg8Q1bKJzA9d4
+      78xJAB7PPMUVXrC0tglVHkG8d+UG53q7ADh54jhzszOUo6Y6B5DJEUolcA5qeEGzs7HEvfxT
+      Pv30EzI1v7YKTE5Oc7C7wfz8AjuFUq2DyGRyDFy7xdCVPh7PLtU8Z3FxmaEf/ogbl3pZ3dip
+      YUL02otNHzyHPVb7jHt9zrPZSZ6ul/jkw+u1z3ElpueW2VicZ/7ZHKUqj8peXU+m+RhDH33M
+      qVbH6ouDmucsr73gxz/5jJ62qL5vg9J2inj3S+7cmefc4FDV/3xhbp5croX8WJ7BmzdprulN
+      gYhPPvs5ANlMXOMe91DfxQvcvnefhTjiQg3356Xu7pNMT+YJlSKXb16sfoArMzk5yfLSEu3H
+      uzl9oo07d4dpau2qck6JiUeHczpOnGJ1YZGW493kp2a5ebWKdVWKjD+aZHlpmc6Tvfzi889x
+      5Re0tO7SVOVjNvf4EctLS+Sa2rj8/llu3xkmBj680FzVnNmpCZaXlmhqbqfrRAfjD0cpFt/B
+      u0CH71MHMpnvx0noEDw+QCbhW48heN7cAyeYhnM+lfMcjcZ7B1FMnOh+HT4HoyjS26Bi2/dj
+      NyxSIwUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpv0bxXUfr2GkjcEAAAAASUVORK5C
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      6BKXSADB0v4/Jx44kkxFWD8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 9' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
